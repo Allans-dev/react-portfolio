@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-import Header from './src/Header';
-import LandingPage from './src/LandingPage';
-import Skills from './src/Skills';
-import History from './src/History';
-import Projects from '/src/Projects';
-import AboutMe from './src/AboutMe';
-import Timeline from './src/Timeline';
-import ContactUs from './src/ContactUs';
-import Footer from './src/Footer';
+import Header from './components/Header';
+// import LandingPage from './components/LandingPage';
+// import Skills from './components/Skills';
+// import History from './components/History';
+// import Projects from './components/Projects';
+// import AboutMe from './components/AboutMe';
+// import Timeline from './components/Timeline';
+// import ContactUs from './components/ContactUs';
+// import Footer from './components/Footer';
 
 import './App.css';
 
@@ -17,14 +17,14 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        <LandingPage/>
+        {/* <LandingPage/>
         <Skills/>
         <History/>
         <Projects/>
         <AboutMe/>
         <Timeline/>
         <ContactUs/>
-        <Footer/>
+        <Footer/> */}
       </div>
     );
   }
