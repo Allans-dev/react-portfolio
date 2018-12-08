@@ -5,8 +5,9 @@ const Header = () => {
   return (
     <section className='header'>
       <nav className='header-nav'>
-        <button className='sign-in-btn'>Sign up</button>
-        <button className='log-in-btn'>Log in</button>
+        <button className='exp-btn header-btn'>experience</button>
+        <button className='projects-btn header-btn'>projects</button>
+        <button className='social-btn header-btn'>social</button>
       </nav>
     </section>
   );
