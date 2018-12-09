@@ -27,6 +27,7 @@
   color: rgb(235, 233, 233);
   font-size: 1em;
   padding: .5em;
+  text-decoration: none;
 }
 .header-btn:hover{
   background-color: hsl(209, 71%, 40%);
