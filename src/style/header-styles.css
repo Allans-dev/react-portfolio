@@ -1,5 +1,6 @@
 .header{
-  position: fixed;
+  position: absolute;
+  top: 0;
   width: 100%;
   height: 50px;
   background-color: hsl(209, 71%, 30%);
@@ -30,4 +31,5 @@
 .header-btn:hover{
   background-color: hsl(209, 71%, 40%);
   border-radius: 5px;
+  cursor: pointer;
 }
