@@ -1,9 +1,9 @@
-.header{
+header{
   position: absolute;
   top: 0;
   width: 100%;
   height: 50px;
-  background-color: hsl(209, 71%, 30%);
+  background-color: hsl(209, 71%, 20%);
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: 1fr;
@@ -12,25 +12,34 @@
 
 .header-nav {
   grid-area: nav;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "exp pro soc";
   flex-direction: row;
-  align-items: center;
   justify-content: flex-end;
-  padding-right: 2em;
 }
 
 .header-btn {
   display: flex;
-  margin-right: 2em;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: none;
   color: rgb(235, 233, 233);
   font-size: 1em;
-  padding: .5em;
   text-decoration: none;
 }
 .header-btn:hover{
   background-color: hsl(209, 71%, 40%);
-  border-radius: 5px;
   cursor: pointer;
+}
+
+.exp-btn {grid-area: exp;}
+.projects-btn {grid-area: pro;}
+.social-btn {grid-area: soc;}
+
+
+.header-home-btn {
+  grid-area: logo;
 }

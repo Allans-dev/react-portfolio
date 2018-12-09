@@ -5,13 +5,14 @@ import '../style/header-styles.css';
 
 const Header = () => {
   return (
-    <section className='header'>
+    <header>
+      <Link to={`/`} className='header-home-btn header-btn'>home</Link>
       <nav className='header-nav'>
         <Link to={`/experience`} className='exp-btn header-btn'>experience</Link>
         <Link to={`/projects`} className='projects-btn header-btn'>projects</Link>
         <Link to={`/social`} className='social-btn header-btn'>social</Link>
       </nav>
-    </section>
+    </header>
   );
 };
 
