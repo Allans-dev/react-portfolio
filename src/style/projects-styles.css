@@ -1,10 +1,24 @@
 .projects {
-  margin-top: 100px;
-  padding: 100px;
-  
+  margin-top: 60px;
+  padding: 0 5em;
 }
 
-.project-card-styles{
-  margin-top: 100px;
-  padding: 100px;
+.card-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr;
+  grid-template-areas: 
+  "1st 2nd"
+  "3rd 4th"
+  "5th 6th";
+}
+
+.project-card{
+  margin-bottom: 3em;
+}
+
+.card-iframe {
+  transform:scale(0.3);
+  -webkit-transform:scale(0.8);
+  -moz-transform:scale(0.8)
 }

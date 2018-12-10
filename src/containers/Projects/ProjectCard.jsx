@@ -13,14 +13,16 @@ const ProjectCard = (props) => {
   return (
     <Card className="project-card">
       <CardContent>
-        <CardMedia 
+        <div className="card-iframe">
+        <CardMedia
           component="iframe"
           src={props.iframeSrc}
-          hieght="140"
-          width="100"
+          width="1440px"
+          height="500px"
         />
+        </div>
         <Typography>
-          A brief description.
+          {props.description}
         </Typography>
         <CardActions>
           <Button size="small">Go to site</Button>

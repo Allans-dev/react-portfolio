@@ -18,7 +18,9 @@ class Projects extends Component {
     return (
       <section className="projects">
         <h1>Projects</h1>
-        {displayCards}
+        <div className="card-container">
+          {displayCards}
+        </div>
       </section>
     );
 
