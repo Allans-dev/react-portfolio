@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router';
         
 import Home from './Home';
 import Experience from './Experience';
-import Projects from './Projects';
+import Projects from '../containers/Projects';
 import Social from './Social';
         
 const Main = () => {
