@@ -21,6 +21,7 @@ const ProjectCard = (props) => {
           height="500px"
         />
         </div>
+        <h2>{props.title}</h2>
         <Typography>
           {props.description}
         </Typography>

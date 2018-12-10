@@ -1,16 +1,34 @@
 import React, { Component }from 'react';
 import ProjectCard from './ProjectCard';
+
 import projectList from '../../projectList';
+import projectDes from '../../project-descriptions';
 
 import '../../style/projects-styles.css';
+
 
 class Projects extends Component { 
   render(){
 
+    const cardTitle = () => {
+      return Object.keys(projectDes);
+    }
+
+    const cardDes = () => {
+      return cardTitle().map((item) => {
+        return projectDes[item];
+      });
+    }
+
     const displayCards = (() =>{
-      return projectList.map((item) => {
+      return projectList.map((item, index) => {
         return (
-          <ProjectCard iframeSrc={item}/>
+          <ProjectCard 
+          key={index} 
+          iframeSrc={item} 
+          title={cardTitle()[index]}
+          description={cardDes()[index]}
+          />
         );
       });
     })();
