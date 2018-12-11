@@ -1,6 +1,6 @@
 .projects {
-  margin-top: 60px;
-  padding: 0 5em;
+  padding: 3em;
+  background-color: hsl(209, 71%, 80%);
 }
 
 .card-container{
@@ -14,7 +14,8 @@
 }
 
 .project-card{
-  margin-bottom: 3em;
+  margin: 1em;
+  background-color: hsl(209, 71%, 60%);
 }
 
 .card-iframe {

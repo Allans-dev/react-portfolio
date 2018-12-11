@@ -13,6 +13,7 @@ const ProjectCard = (props) => {
   return (
     <Card className="project-card">
       <CardContent>
+        <h2>{props.title}</h2>
         <div className="card-iframe">
         <CardMedia
           component="iframe"
@@ -22,13 +23,9 @@ const ProjectCard = (props) => {
           height="500px"
         />
         </div>
-        <h2>{props.title}</h2>
         <Typography>
           {props.description}
         </Typography>
-        <CardActions>
-          <Button size="small">Go to site</Button>
-        </CardActions>
       </CardContent>
     </Card>
   );
