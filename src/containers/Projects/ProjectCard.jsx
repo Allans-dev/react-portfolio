@@ -16,6 +16,7 @@ const ProjectCard = (props) => {
         <div className="card-iframe">
         <CardMedia
           component="iframe"
+          alt="please allow for http(unsecure) sites for this page"
           src={props.iframeSrc}
           width="1440px"
           height="500px"
