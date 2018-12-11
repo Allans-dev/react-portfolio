@@ -26,6 +26,10 @@ const ProjectCard = (props) => {
         <Typography>
           {props.description}
         </Typography>
+        <CardActions>
+          <Button href={props.github} target="_blank" size="medium">Github</Button>
+          <Button href={props.site} target="_blank" size="medium">Go to site</Button>
+        </CardActions>
       </CardContent>
     </Card>
   );

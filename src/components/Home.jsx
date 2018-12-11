@@ -5,7 +5,8 @@ import '../style/home-styles.css';
 const Home = () => {
   return (
     <section className="home">
-      Home Page!!!
+      Under Construction.
+      Please visit the Project Page :)
     </section>
   );
 }

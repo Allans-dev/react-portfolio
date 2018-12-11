@@ -1,11 +1,10 @@
 const projectDescriptions = {
-  "Mobile Site": "description for mobile site",
-  "Earth at Noon": "description for weather site",
-  "realUniverse": "description for router site",
-  "Tic Tac Toe": "description for tictactoe site",
-  "Simon Game": "description for Simon game site",
-  "Wiki searcher": "description for wiki site",
-  
+  "Redux Weather": "React-Redux weather app showing weather forecast around the world at noon.",
+  "React Router Demo": "nb. the purple buttons show router demo. Real planet data.",
+  "Mobile Site": "Responsive website showing responsive CSS including side nav and slide swiper.",
+  "Tic Tac Toe": "tic tac toe using jQuery",
+  "Simon Game": "Simon memory game made in vanilla JS. Please press ON then START.",
+  "Wiki searcher": "Search using Wikipedia API",
 }
 
 export default projectDescriptions;
