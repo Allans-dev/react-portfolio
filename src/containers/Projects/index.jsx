@@ -1,8 +1,7 @@
 import React, { Component }from 'react';
 import ProjectCard from './ProjectCard';
 
-import projectSites from '../../projectSites';
-import projectDes from '../../project-descriptions';
+import projectData from '../../project-data';
 
 import '../../style/projects-styles.css';
 
@@ -10,35 +9,19 @@ import '../../style/projects-styles.css';
 class Projects extends Component { 
 
   cardTitle = (() => {
-    return Object.keys(projectDes);
-  })()
-
-  cardDes = (() => {
-    return this.cardTitle.map((item) => {
-      return projectDes[item];
-    });
-  })()
-
-  liveSites = (() => {
-    return Object.keys(projectSites);
-  })()
-
-  gitHubSites = (() => {
-    return this.liveSites.map((item) => {
-      return projectSites[item];
-    });
+    return Object.keys(projectData);
   })()
 
   displayCards = (() =>{
-    return this.liveSites.map((item, index) => {
+    return this.cardTitle.map((item, index) => {
       return (
         <ProjectCard 
         key={index} 
-        iframeSrc={item} 
-        title={this.cardTitle[index]}
-        description={this.cardDes[index]}
-        site={this.liveSites[index]}
-        github={this.gitHubSites[index]}
+        iframeSrc={projectData[item].website} 
+        title={item}
+        description={projectData[item].description}
+        site={projectData[item].website}
+        github={projectData[item].github}
         />
       );
     });

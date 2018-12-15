@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 
 import Modal from './Modal';
 
+import { 
+  Button 
+} from '@material-ui/core';
+
+
 import '../style/experience-styles.css';
 
 class Experience extends Component {
@@ -25,9 +30,9 @@ class Experience extends Component {
           <p>Modal</p>
           <p>Data</p>
         </Modal>
-        <button type="button" onClick={this.showModal}>
-          Open Modal
-        </button>
+        <Button type="button" onClick={this.showModal}>
+          Open
+        </Button>
       </section>
     );
   }
