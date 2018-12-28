@@ -1,7 +1,7 @@
 const projectData = {
   'Redux Weather':{
-    description: 'React-Redux weather app showing weather forecast around the world at noon. Unfortunately the API does not support https.',
-    website: 'http://allancheung.com/reactWeather',
+    description: 'React-Redux weather app showing weather forecast around the world at noon.',
+    website: 'https://allancheung.com/reactWeather',
     github:'https://github.com/Allans-dev/ReactReduxWeather'
   },
   'React Router Demo':{
