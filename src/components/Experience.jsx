@@ -16,23 +16,26 @@ class Experience extends Component {
   }
   showModal = () => {
     this.setState({ show: true });
-  };
+  }
 
   hideModal = () => {
     this.setState({ show: false });
-  };
+  }
 
   render() {
     return (
       <section className="experience">
-        Experience Page %% <br/>
-        <Modal show={this.state.show} handleClose={this.hideModal}>
-          <p>Modal</p>
-          <p>Data</p>
-        </Modal>
-        <Button type="button" onClick={this.showModal}>
-          Open
-        </Button>
+        <div className="table-container">
+          <div className="cell exp"></div>
+          <div className="cell extra"></div>
+          <div className="cell org"></div>
+          <div className="cell fun">
+            <Button type="button" onClick={this.showModal}>
+              Open
+            </Button>
+          </div> 
+        </div>
+        <Modal show={this.state.show} handleClose={this.hideModal}/> 
       </section>
     );
   }
