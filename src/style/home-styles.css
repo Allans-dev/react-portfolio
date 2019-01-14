@@ -1,6 +1,7 @@
 .home{
   margin-top: 3em;
-  background-color: hsl(209, 70%, 10%)
+  background-color: hsl(209, 70%, 10%);
+  height: 100vh;
 }
 .title{
   position: absolute;
@@ -8,4 +9,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   color: rgb(212, 212, 212);
+}
+
+.particles {
+  height: 100%;
 }

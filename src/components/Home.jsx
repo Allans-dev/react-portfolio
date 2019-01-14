@@ -8,6 +8,7 @@ const Home = () => {
   return (
     <section className="home">
       <Particles
+        className="particles"
         params={{
           "particles": {
               "number": {
@@ -53,7 +54,7 @@ const Home = () => {
                       "opacity": 0
                   },
                   "repulse": {
-                      "distance": 400,
+                      "distance": 300,
                       "duration": 4
                   }
               }
