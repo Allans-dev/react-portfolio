@@ -1,9 +1,8 @@
 .projects {
-  padding: 3em;
-  background-color: hsl(209, 71%, 80%);
 }
 
 .card-container{
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3fr;
@@ -19,7 +18,7 @@
 }
 
 .card-iframe {
-  transform:scale(0.3);
-  -webkit-transform:scale(0.8);
-  -moz-transform:scale(0.8)
+  transform:scale(0.7);
+  -webkit-transform:scale(0.7);
+  -moz-transform:scale(0.7)
 }
