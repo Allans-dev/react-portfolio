@@ -43,9 +43,9 @@ class Experience extends Component {
           <div className="cell extra">
             <h2>Extra-Curricular</h2>
             <ul>
-              <li>free Code Camp - Top Contributor 2018 - hosting a study group</li>
-              <li>volunteer helper at Muses Code React Workshop</li>
-              <li>attended technology meetups in 2017</li>
+              <li>Free Code Camp - Top Contributor 2018 - hosting a study group</li>
+              <li>Volunteer helper at Muses Code React Workshop</li>
+              <li>Attended technology meetups in 2017</li>
             </ul>
           </div>
           <div className="cell fun">

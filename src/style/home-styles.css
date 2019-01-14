@@ -1,4 +1,11 @@
 .home{
-  margin-top: 100px;
-  padding: 100px;
+  margin-top: 3em;
+  background-color: hsl(209, 70%, 10%)
+}
+.title{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(212, 212, 212);
 }

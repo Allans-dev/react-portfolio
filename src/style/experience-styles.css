@@ -1,5 +1,6 @@
 .experience {
   height: 100vh;
+  margin-top: 3em;
   position: relative;
   background-color: aliceblue;
   line-height: 1.3em;
@@ -7,20 +8,18 @@
 
 .table-container {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  padding: 0px 10em;
 }
 
 .cell {
-  position: relative;
-  width: 40%;
-  min-height: 200px;
+  min-height: 15em;
 }
 
 .exp { 
@@ -40,7 +39,7 @@
   border-left: 1px solid hsl(209, 50%, 20%);
   border-top: 1px solid hsl(209, 50%, 20%);
   justify-content: center;
-  line-height: 200px;
+  line-height: 15em;
 }
 
 li {
