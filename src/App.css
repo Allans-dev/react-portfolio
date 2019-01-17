@@ -11,6 +11,7 @@ section{
 
 .particles {
   position: absolute;
+  z-index: -10;
   height: 100%;
   width: 100%;
   background-color: hsl(209, 70%, 10%);

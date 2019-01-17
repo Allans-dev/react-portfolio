@@ -5,6 +5,8 @@ import projectData from '../../project-data';
 
 import '../../style/projects-styles.css';
 
+import Particles from 'react-particles-js';
+import params from '../../particle-params';
 
 class Projects extends Component { 
 
@@ -30,6 +32,7 @@ class Projects extends Component {
   render(){
     return (
       <section className="projects">
+        <Particles className="particles" params={params}/>
         <h1>Projects</h1>
         <div className="card-container">
           {this.displayCards}

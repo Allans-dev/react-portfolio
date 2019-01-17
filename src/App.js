@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        <Particles className="particles" params={params} />
+        <Particles className="particles" params={params}/>
         <Main/>
         <Footer/>
       </div>
