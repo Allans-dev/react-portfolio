@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router';
 import Home from './Home';
-import Experience from './Experience';
 import Projects from '../containers/Projects';
+import Experience from './Experience';
 import Social from '../containers/Social';
-        
+
 const Main = () => (
   <main>
     <Switch>

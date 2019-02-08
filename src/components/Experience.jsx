@@ -1,28 +1,24 @@
 import React, { Component } from 'react';
-
+import { Button } from '@material-ui/core';
 import Modal from './Modal';
-
-import { 
-  Button 
-} from '@material-ui/core';
-
-
 import '../style/experience-styles.css';
 
 class Experience extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = { show: false };
   }
-  showModal = () => {
+
+  showModal() {
     this.setState({ show: true });
   }
 
-  hideModal = () => {
+  hideModal() {
     this.setState({ show: false });
   }
 
   render() {
+    const { show } = this.state;
     return (
       <section className="experience">
         <div className="table-container">
@@ -34,7 +30,9 @@ class Experience extends Component {
           <div className="cell edu">
             <h2>Education</h2>
             <ul>
+              // eslint-disable-next-line react/no-unescaped-entities
               <li>Free Code Camp's Front End Certificate 2017</li>
+              // eslint-disable-next-line react/no-unescaped-entities
               <li>Free Code Camp's Algorthms and Data Structures Certificate</li>
               <li>Bachelors Property Economics, University of Technology Sydney</li>
               <li>International Business, Berlin University of Social Sciences</li>
@@ -52,9 +50,9 @@ class Experience extends Component {
             <Button type="button" onClick={this.showModal}>
               Open
             </Button>
-          </div> 
+          </div>
         </div>
-        <Modal show={this.state.show} handleClose={this.hideModal}/> 
+        <Modal show={show} handleClose={this.hideModal} />
       </section>
     );
   }
