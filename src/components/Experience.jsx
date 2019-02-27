@@ -30,10 +30,10 @@ class Experience extends Component {
           <div className="cell edu">
             <h2>Education</h2>
             <ul>
-              // eslint-disable-next-line react/no-unescaped-entities
-              <li>Free Code Camp's Front End Certificate 2017</li>
-              // eslint-disable-next-line react/no-unescaped-entities
-              <li>Free Code Camp's Algorthms and Data Structures Certificate</li>
+              {// eslint-disable-next-line react/no-unescaped-entities
+                <li>Free Code Camp's Front End Certificate 2017</li>}
+              {// eslint-disable-next-line react/no-unescaped-entities
+                <li>Free Code Camp's Algorthms and Data Structures Certificate</li>}
               <li>Bachelors Property Economics, University of Technology Sydney</li>
               <li>International Business, Berlin University of Social Sciences</li>
             </ul>
