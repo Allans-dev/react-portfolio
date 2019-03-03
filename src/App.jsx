@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 import params from './particle-params';
 
-import './App.css';
+import './App.scss';
 
 const App = () => (
   <div className="App">

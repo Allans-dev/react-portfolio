@@ -2,7 +2,7 @@ import React from 'react';
 import Particles from 'react-particles-js';
 import ProjectCard from './ProjectCard';
 import projectData from '../../project-data';
-import '../../style/projects-styles.css';
+import '../../style/projects-styles.scss';
 import params from '../../particle-params';
 
 const cardTitle = () => Object.keys(projectData);

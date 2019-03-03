@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../style/home-styles.css';
+import '../style/home-styles.scss';
 
 const Home = () => (
   <section className="home">

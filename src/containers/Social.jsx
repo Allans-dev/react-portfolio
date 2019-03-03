@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import '../style/social-styles.css';
+import '../style/social-styles.scss';
 
 class Social extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class Social extends Component {
   render() {
     return (
       <section className="social">
-        Social ^^^
+        <div>Social^^^</div>
       </section>
     );
   }

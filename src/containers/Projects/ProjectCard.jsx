@@ -11,7 +11,7 @@ import {
   Button,
 } from '@material-ui/core';
 
-import '../../style/projects-styles.css';
+import '../../style/projects-styles.scss';
 
 const ProjectCard = (props) => {
   const {
@@ -46,6 +46,6 @@ const ProjectCard = (props) => {
       </CardContent>
     </Card>
   );
-}
+};
 
 export default ProjectCard;

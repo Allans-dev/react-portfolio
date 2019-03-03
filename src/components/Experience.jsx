@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from '@material-ui/core';
 import Modal from './Modal';
-import '../style/experience-styles.css';
+import '../style/experience-styles.scss';
 
 class Experience extends Component {
   constructor(props) {
