@@ -11,7 +11,7 @@ class Social extends Component {
   render() {
     return (
       <section className="social">
-        <div>Social^^^</div>
+        <div className="icon-container">Social^^^</div>
       </section>
     );
   }
