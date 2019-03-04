@@ -1,9 +1,10 @@
 .social {
   width: 100%;
-  min-height: 100vh;  
+  min-height: 100vh;
 
   .icon-container{
-    min-height: 100vh;  
+    min-height: calc(100vh - 3em);
+    padding-top: 3em;  
     background-color: hsl(209, 71%, 20%);
     animation-name: social-background;
     animation-duration: 1.5s;
@@ -18,7 +19,7 @@
     a {
       color: rgb(132, 0, 255);
       font-size: 5em;
-      padding: 0 5%;
+      padding: 0 5% 1em;
       line-height: 100%;
       opacity: 0;
       animation-name: icons-in;
