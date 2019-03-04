@@ -5,17 +5,66 @@
   .icon-container{
     min-height: calc(100vh - 3em);  
     margin-top: 3em;
-    background-color: grey;
-    animation-name: social-media;
-    animation-duration: 4s;
-    animation-delay: 1s;
+    background-color: hsl(209, 71%, 20%);
+    animation-name: social-background;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      font-size: 5em;
+      padding: 0 5%;
+      line-height: 100%;
+      
+    }
+  }
+
+  .social-title{
+    position: absolute;
+    font-size: 3em;
+    font-weight: 200;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    animation-name: text-up;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
   }
 }
 
-@keyframes social-media {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
+@keyframes social-background {
+  0%   {
+    background-color: hsl(209, 71%, 20%);
+  }
+  100% {
+    background-color: rgb(58, 1, 124);
+    min-height: 22em;
+    transform: translateY(50%);
+  }
+}
+
+@keyframes text-up {
+  0% {
+    font-size: 3em;
+    font-weight: 200;
+    top: 50%;
+  }
+
+  50% {
+    font-size: 6em;
+    font-weight: bold;
+    top: 50%;
+  }
+
+  100% {
+    font-size: 3em;
+    font-weight: 200;
+    top: 15%;
+  }
 }
