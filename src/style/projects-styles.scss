@@ -5,17 +5,15 @@
 .card-container{
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 3fr;
-  grid-template-areas: 
-  "1st 2nd"
-  "3rd 4th"
-  "5th 6th";
+  padding: 0 25%;
+  color: rgb(163, 163, 163);
 }
 
 .project-card{
   margin: 1em;
-  background-color: hsl(209, 71%, 60%);
+  background-color: hsl(209, 60%, 65%);
 }
 
 .card-iframe {

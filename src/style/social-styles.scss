@@ -10,7 +10,7 @@
     animation-duration: 1.5s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
+    animation-timing-function: linear;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -24,7 +24,7 @@
       opacity: 0;
       animation-name: icons-in;
       animation-duration: 1.5s;
-      animation-delay: 2s;
+      animation-delay: 3s;
       animation-timing-function: ease-out; 
       animation-fill-mode: forwards;
     }
@@ -64,10 +64,11 @@
   0%   {
     background-color: hsl(209, 71%, 20%);
   }
+
   100% {
     background-color: rgb(58, 1, 124);
-    min-height: 22em;
-    transform: translateY(50%);
+    min-height: 18em;
+    transform: translateY(calc(50% + 3em));
   }
 }
 

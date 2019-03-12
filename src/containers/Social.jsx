@@ -11,7 +11,7 @@ const Social = () => (
       <a href="https://www.instagram.com/al_che9/" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram" /></a>
     </div>
     <div className="social-title">
-        Social-Media
+        Social Media
     </div>
   </section>
 );

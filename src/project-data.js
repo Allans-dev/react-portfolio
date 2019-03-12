@@ -14,21 +14,21 @@ const projectData = {
     website:'https://allancheung.com/responsive',
     github:'https://github.com/Allans-dev/responsiveTest',
   },  
-  'Tic Tac Toe':{
-    description:'tic tac toe using jQuery',
-    website:'https://allancheung.com/tictactoe',
-    github:'https://github.com/Allans-dev/Tic-Tac-Toe',
-  },  
-  'Simon Game':{
-    description:'Simon memory game made in vanilla JS. Please press ON then START.',
-    website:'https://allancheung.com/simon',
-    github:'https://github.com/Allans-dev/Simon-Game',
-  },  
-  'Wiki searcher':{
-    description:'Search using Wikipedia API',
-    website:'https://allancheung.com/wiki',
-    github:'https://github.com/Allans-dev/Wikipedia-Viewer',
-  },
+  // 'Tic Tac Toe':{
+  //   description:'tic tac toe using jQuery',
+  //   website:'https://allancheung.com/tictactoe',
+  //   github:'https://github.com/Allans-dev/Tic-Tac-Toe',
+  // },  
+  // 'Simon Game':{
+  //   description:'Simon memory game made in vanilla JS. Please press ON then START.',
+  //   website:'https://allancheung.com/simon',
+  //   github:'https://github.com/Allans-dev/Simon-Game',
+  // },  
+  // 'Wiki searcher':{
+  //   description:'Search using Wikipedia API',
+  //   website:'https://allancheung.com/wiki',
+  //   github:'https://github.com/Allans-dev/Wikipedia-Viewer',
+  // },
 }
 
 export default projectData;
