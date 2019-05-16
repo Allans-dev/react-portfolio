@@ -1,17 +1,17 @@
 const projectData = {
-  'Redux Weather':{
-    description: 'React-Redux weather app showing weather forecast around the world at noon.',
-    website: 'https://allancheung.com/reactWeather',
-    github:'https://github.com/Allans-dev/ReactReduxWeather'
-  },
-  'React Router Demo':{
-    description:'nb. the purple buttons show router demo. Real planet data.',
-    website:'https://allancheung.com/realuniverse',
-    github:'https://github.com/Allans-dev/realUniverse',
-  },  
+  // 'Redux Weather':{
+  //   description: 'React-Redux weather app showing weather forecast around the world at noon.',
+  //   website: 'https://allancheung.com/reactWeather',
+  //   github:'https://github.com/Allans-dev/ReactReduxWeather'
+  // },
+  // 'React Router Demo':{
+  //   description:'nb. the purple buttons show router demo. Real planet data.',
+  //   website:'https://allancheung.com/realuniverse',
+  //   github:'https://github.com/Allans-dev/realUniverse',
+  // },  
   'Mobile Site':{
     description:'Responsive website showing responsive CSS including side nav and slide swiper.',
-    website:'https://allancheung.com/responsive',
+    website:'https://damp-waters-47555.herokuapp.com',
     github:'https://github.com/Allans-dev/responsiveTest',
   },  
   // 'Tic Tac Toe':{
