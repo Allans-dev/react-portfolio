@@ -10,7 +10,6 @@ const cardTitle = () => Object.keys(projectData);
 const Projects = () => (
   <section className="projects">
     <Particles className="particles" params={params} />
-    <h1>Projects</h1>
     <div className="card-container">
       {cardTitle().map(item => (
         <ProjectCard

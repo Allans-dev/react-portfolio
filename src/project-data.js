@@ -9,7 +9,7 @@ const projectData = {
   //   website:'https://allancheung.com/realuniverse',
   //   github:'https://github.com/Allans-dev/realUniverse',
   // },  
-  'Mobile Site':{
+  'Web Site':{
     description:'Responsive website showing responsive CSS including side nav and slide swiper.',
     website:'https://damp-waters-47555.herokuapp.com',
     github:'https://github.com/Allans-dev/responsiveTest',
@@ -29,6 +29,11 @@ const projectData = {
   //   website:'https://allancheung.com/wiki',
   //   github:'https://github.com/Allans-dev/Wikipedia-Viewer',
   // },
+    'Planets':{
+      description: 'Typescript React Planetary data display',
+      website: 'https://allans-dev.github.io/real-universe',
+      github: 'https://github.com/Allans-dev/real-universe',
+    }
 }
 
 export default projectData;
