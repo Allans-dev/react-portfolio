@@ -1,3 +1,3 @@
 Allan's Portfolio
 
-This porject was created with create-react-app.
+This project was created with create-react-app.
