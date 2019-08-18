@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from '@material-ui/core';
+// import { Button } from '@material-ui/core';
 import Modal from './Modal';
 import '../style/experience-styles.scss';
 
@@ -24,18 +24,17 @@ class Experience extends Component {
         <div className="table-container">
           <div className="cell exp">
             <h2>Experience</h2>
-            <h3>Junior Full Stack Web Developer, BirdBrain</h3>
+            <p>Junior Full Stack Web Developer, BirdBrain 2018</p>
             <p>Developing in HTML, CSS,JavaScript, ReactJS, PHP and WordPress</p>
           </div>
           <div className="cell edu">
-            <h2>Education</h2>
+            <h2>Programming</h2>
             <ul>
+              <li>Certificate IV Programming, TAFE 2019</li>
               {// eslint-disable-next-line react/no-unescaped-entities
                 <li>Free Code Camp's Front End Certificate 2017</li>}
               {// eslint-disable-next-line react/no-unescaped-entities
                 <li>Free Code Camp's Algorthms and Data Structures Certificate</li>}
-              <li>Bachelors Property Economics, University of Technology Sydney</li>
-              <li>International Business, Berlin University of Social Sciences</li>
             </ul>
           </div>
           <div className="cell extra">
@@ -46,10 +45,17 @@ class Experience extends Component {
               <li>Attended technology meetups in 2017</li>
             </ul>
           </div>
-          <div className="cell fun">
-            <Button type="button" onClick={this.showModal}>
+          <div className="cell back">
+            <h2>Property Economics Background</h2>
+            <ul>
+              <li>Assistant Compliance Officer, Whelan Property Group 2016 </li>
+              <li>Resident Assistant, Urbanest 2014</li>
+              <li>B. Property Economics, University of Technology Sydney 2016</li>
+              <li>International Business, Berlin University of Social Sciences 2015</li>
+            </ul>
+            {/* <Button type="button" onClick={this.showModal}>
               Open
-            </Button>
+            </Button> */}
           </div>
         </div>
         <Modal show={show} handleClose={this.hideModal} />
