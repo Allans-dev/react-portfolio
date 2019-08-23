@@ -5,19 +5,19 @@ import '../style/header-styles.scss';
 
 function LinkEnvCheck() {
   if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-        return <Link to="/" className="header-home-btn header-btn">home</Link>
+        return "/";
       } else {
-        return <Link to="/react-portfolio" className="header-home-btn header-btn">home</Link>
+        return "/react-portfolio";
       }
 }
 
 const Header = () => (
   <header>
-    {LinkEnvCheck()}
+    <Link to={LinkEnvCheck()} className="header-home-btn header-btn">home</Link>
     <nav className="header-nav">
-      <Link to="/experience" className="exp-btn header-btn">experience</Link>
-      <Link to="/projects" className="projects-btn header-btn">projects</Link>
-      <Link to="/social" className="social-btn header-btn">social</Link>
+      <Link to={LinkEnvCheck()}"/experience" className="exp-btn header-btn">experience</Link>
+      <Link to={LinkEnvCheck()}"/projects" className="projects-btn header-btn">projects</Link>
+      <Link to={LinkEnvCheck()}"/social" className="social-btn header-btn">social</Link>
     </nav>
   </header>
 );
