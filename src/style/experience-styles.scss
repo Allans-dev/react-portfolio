@@ -1,5 +1,10 @@
+@import "mixins";
+
 .experience {
-  height: calc(100vh - 3em);
+  padding: 10% 0;
+  @include tablet-portrait-and-below {
+    font-size: 16px;
+   }
 }
 
 .table-container {
@@ -8,34 +13,54 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0px 10em;
+  vertical-align: middle;
+
+  ul li{
+    text-align: center;
+  }
+
+ @include tablet-portrait-and-below {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+ }
+  
 }
 
 .cell {
   min-height: 15em;
+  @include tablet-portrait-and-below {
+    border-bottom: 1px solid hsl(209, 50%, 20%);
+  }
 }
 
 .exp { 
   border-right: 1px solid hsl(209, 50%, 20%);
   border-bottom: 1px solid hsl(209, 50%, 20%);
+  @include tablet-portrait-and-below {
+    border-right: 0;
+  }
 }
 .edu {
   border-left: 1px solid hsl(209, 50%, 20%);
   border-bottom: 1px solid hsl(209, 50%, 20%);
+  @include tablet-portrait-and-below {
+    border-left: 0;
+  }
 }
 
 .extra {
   border-right: 1px solid hsl(209, 50%, 20%);
   border-top: 1px solid hsl(209, 50%, 20%);
+  @include tablet-portrait-and-below {
+    border-right: 0;
+   }
 }
 .back {
   border-left: 1px solid hsl(209, 50%, 20%);
   border-top: 1px solid hsl(209, 50%, 20%);
-  // justify-content: center;
-  // line-height: 15em;
+  @include tablet-portrait-and-below {
+    border: 0;
+   }
 }
 
 li {

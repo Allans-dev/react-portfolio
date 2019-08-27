@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import Modal from './Modal';
 import '../style/experience-styles.scss';
 
+import Particles from 'react-particles-js';
+import params from '../particle-params';
+
 class Experience extends Component {
   constructor(props) {
     super(props);
@@ -21,6 +24,7 @@ class Experience extends Component {
     const { show } = this.state;
     return (
       <section className="experience">
+      <Particles className="particles" params={params} />
         <div className="table-container">
           <div className="cell exp">
             <h2>Experience</h2>

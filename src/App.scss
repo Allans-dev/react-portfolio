@@ -8,8 +8,13 @@ section{
   position: relative;
 }
 
+canvas {
+vertical-align: bottom;
+}
+
 .particles {
   position: absolute;
+  background-position: 50% 50%;
   z-index: -10;
   height: 100%;
   width: 100%;
