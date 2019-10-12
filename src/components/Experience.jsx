@@ -45,8 +45,8 @@ class Experience extends Component {
             <h2>Extra-Curricular</h2>
             <ul>
               <li>Free Code Camp - Top Contributor 2018 - hosting a study group</li>
-              <li>Volunteer helper at Muses Code React Workshop</li>
-              <li>Attended technology meetups in 2017</li>
+              <li>Volunteer helper at Muses Code React Workshop 2018</li>
+              <li>Volunteer at 2019 IoT Impact Conference</li>
             </ul>
           </div>
           <div className="cell back">
