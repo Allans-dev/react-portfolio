@@ -6,21 +6,21 @@ import Projects from '../containers/Projects';
 import Experience from './Experience';
 import Social from '../containers/Social';
 
-function envCheck() {
-  if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-        return "/";
-      } else {
-        return "/react-portfolio/";
-      }
-}
+// function envCheck() {
+//   if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+//         return "/";
+//       } else {
+//         return "/react-portfolio/";
+//       }
+// }
 
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path={envCheck()} component={Home} />
-      <Route path={envCheck() + "experience"} component={Experience} />
-      <Route path={envCheck() + "projects"} component={Projects} />
-      <Route path={envCheck() + "social"} component={Social} />
+      <Route exact path={"/"} component={Home} />
+      <Route path={"/experience"} component={Experience} />
+      <Route path={"/projects"} component={Projects} />
+      <Route path={"/social"} component={Social} />
     </Switch>
   </main>
 );
