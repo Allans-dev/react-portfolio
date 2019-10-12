@@ -12,7 +12,7 @@ import App from './App';
 const history = createBrowserHistory();
 
 ReactDOM.render(
-  <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
+  <BrowserRouter history={history} basename={'/'}>
     <App />
   </BrowserRouter>,
   // eslint-disable-next-line no-undef
