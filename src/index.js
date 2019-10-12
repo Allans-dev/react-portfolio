@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import { BrowserRouter } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+
 import './index.css';
 import 'font-awesome/css/font-awesome.min.css';
-import { BrowserRouter } from 'react-router-dom';
-import { createBroswerHistory } from "history";
 import * as serviceWorker from './serviceWorker';
 import App from './App';
 
