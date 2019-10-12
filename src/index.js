@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import App from './App';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
     <App />
   </BrowserRouter>,
   // eslint-disable-next-line no-undef
