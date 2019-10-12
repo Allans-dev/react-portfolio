@@ -11,7 +11,7 @@ const projectData = {
   // },  
   'Web Site':{
     description:'Responsive website showing responsive CSS including side nav and slide swiper.',
-    website:'https://damp-waters-47555.herokuapp.com',
+    website:'https://practice-web.herokuapp.com/',
     github:'https://github.com/Allans-dev/responsiveTest',
   },  
   // 'Tic Tac Toe':{
