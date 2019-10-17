@@ -8,9 +8,9 @@ import params from '../../particle-params';
 const cardTitle = () => Object.keys(projectData);
 
 const Projects = () => (
-  <section className="projects">
+  <article className="projects">
     <Particles className="particles" params={params} />
-    <div className="card-container">
+    <section className="card-container">
       {cardTitle().map(item => (
         <ProjectCard
           key={item}
@@ -21,7 +21,7 @@ const Projects = () => (
           github={projectData[item].github}
         />
       ))}
-    </div>
-  </section>
+    </section>
+  </article>
 );
 export default Projects;

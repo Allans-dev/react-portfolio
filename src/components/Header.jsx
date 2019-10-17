@@ -13,11 +13,13 @@ function LinkEnvCheck() {
 
 const Header = () => (
   <header>
-    <Link to={LinkEnvCheck()} className="header-home-btn header-btn">home</Link>
-    <nav className="header-nav">
-      <Link to={LinkEnvCheck() + "experience"} className="exp-btn header-btn">experience</Link>
-      <Link to={LinkEnvCheck() + "projects"} className="projects-btn header-btn">projects</Link>
-      <Link to={LinkEnvCheck() + "social"} className="social-btn header-btn">social</Link>
+    <nav className="header-home-btn">
+        <Link to={LinkEnvCheck()} className="header-btn">home</Link>
+    </nav>
+    <nav className="nav-btns">
+      <Link to={LinkEnvCheck() + "experience"} className="header-btn">experience</Link>
+      <Link to={LinkEnvCheck() + "projects"} className="header-btn">projects</Link>
+      <Link to={LinkEnvCheck() + "social"} className="header-btn">social</Link>
     </nav>
   </header>
 );

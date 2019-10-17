@@ -5,43 +5,39 @@ header{
   width: 100%;
   height: 3em;
   background-color: hsl(209, 71%, 20%);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "logo nav";
-}
-
-.header-nav {
-  grid-area: nav;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "exp pro soc";
+  display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .header-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: transparent;
   border: none;
   color: rgb(235, 233, 233);
   font-size: 1em;
   text-decoration: none;
+  padding: 1em 10%;
 }
-.header-btn:hover{
+.header-btn:hover, .header-btn:active{
   background-color: hsl(209, 71%, 40%);
   cursor: pointer;
 }
 
-.exp-btn {grid-area: exp;}
-.projects-btn {grid-area: pro;}
-.social-btn {grid-area: soc;}
-
-
 .header-home-btn {
+  flex: auto;
   text-align: left;
-  grid-area: logo;
 }
+
+// nav{
+//   line-height: 3em;
+// }
+
+.nav-btns{
+  flex: 50%;
+  text-align: right;
+}
+// .nav-btns .header-btn{
+//   padding: 1em 10%;
+// }
