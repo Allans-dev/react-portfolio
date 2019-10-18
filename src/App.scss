@@ -1,3 +1,4 @@
+@import './style/common-styles';
 .App {
   text-align: center;
   line-height: 1.3em;
@@ -9,14 +10,14 @@ section{
 }
 
 canvas {
-vertical-align: bottom;
+  vertical-align: center;
 }
 
 .particles {
-  position: absolute;
+  position: fixed;
   background-position: 50% 50%;
   z-index: -10;
   height: 100%;
   width: 100%;
-  background-color: hsl(209, 70%, 10%);
+  background-color: $darkBlue;
 }

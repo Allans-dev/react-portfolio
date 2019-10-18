@@ -2,15 +2,6 @@
 /* eslint-disable no-console */
 import React from 'react';
 
-import {
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Typography,
-  Button,
-} from '@material-ui/core';
-
 import '../../style/projects-styles.scss';
 
 const ProjectCard = (props) => {
@@ -24,27 +15,25 @@ const ProjectCard = (props) => {
   console.log(props);
 
   return (
-    <Card className="project-card">
-      <CardContent>
+    <article className="project-card">
+      <section>
         <h2>{title}</h2>
         <div className="card-iframe">
-          <CardMedia
-            component="iframe"
+          <iframe
+            title={title}
             alt="iframe for project website"
             src={iframeSrc}
-            width="1440px"
-            height="500px"
           />
         </div>
-        <Typography>
+        <p>
           {description}
-        </Typography>
-        <CardActions>
-          <Button href={github} target="_blank" size="medium">Github</Button>
-          <Button href={site} target="_blank" size="medium">Go to site</Button>
-        </CardActions>
-      </CardContent>
-    </Card>
+        </p>
+        <div className="project-btns">
+          <a href={github} target="_blank" rel="noopener noreferrer" size="medium">Github</a>
+          <a href={site} target="_blank" rel="noopener noreferrer" size="medium">Go to site</a>
+        </div>
+      </section>
+    </article>
   );
 };
 

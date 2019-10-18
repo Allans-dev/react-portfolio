@@ -1,4 +1,4 @@
-
+@import 'common-styles';
 
 .card-container{
   height: 100%;
@@ -11,21 +11,80 @@
 }
 
 .project-card{
-  width: 36em;
-  margin: 1em;
+  position: relative;
+  width: 30em;
+  height: 36em;
+  margin: 4em 1em;
   max-height: 40em;
+  @media only screen and (max-width : 1130px) {
+    width: 50em;
+    margin: 2em 1em;
+  }
   @media only screen and (max-width : 650px) {
+    margin: 2em 1em;
     font-size:12px;
-	}
+  }
+  @media only screen and (max-width : 450px) {
+    margin: 2em 0 0 0;
+    height: 30em;
+    width: 30em;
+  }
+
+  h2{
+    @media only screen and (max-width : 450px) {
+      margin-bottom: -2em;
+    }
+    
+  }
+
+  p{
+    max-width: 80%;
+    padding: 0 5em;
+    @media only screen and (max-width : 1130px) {
+      width: 50em;
+    }
+    @media only screen and (max-width : 450px) {
+      position: relative;
+      padding: 0 3em;
+      top: -3em;
+    }
+  }
 }
 
-.card-iframe {
-  transform:scale(0.85);
-  -webkit-transform:scale(0.85);
-  -moz-transform:scale(0.85);
-  @media only screen and (max-width : 650px) {
+iframe {
+  height: 25em;
+  width: 25em;
+  background-color: #eee ;
+  @media only screen and (max-width : 1130px) {
+    width: 40em;
+  }
+  @media only screen and (max-width : 450px) {
+    height: 20em;
+    width: 20em;
     transform:scale(0.6);
-  -webkit-transform:scale(0.6);
-  -moz-transform:scale(0.6);
-	}
+    -webkit-transform:scale(0.6);
+    -moz-transform:scale(0.6);
+  }
+}
+
+.project-btns{
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5em;
+  @media only screen and (max-width : 450px) {
+    position: relative;
+    top: -3em;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+    padding: 1em;
+    background-color: $blue;
+    border-radius: 5px;
+    @media only screen and (max-width : 450px) {
+      padding: 0.5em;
+    }
+  }
 }
