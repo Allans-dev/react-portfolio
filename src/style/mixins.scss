@@ -1,6 +1,5 @@
 $mq-mobile-portrait		: 370px !default;
-// $mq-mobile-landscape	: 480px !default;
-$mq-mobile-landscape	: 700px !default;
+$mq-mobile-landscape	: 480px !default;
 $mq-tablet-portrait		: 990px !default;
 //$mq-tablet-portrait	: 768px !default;
 $mq-tablet-landscape	: 1150px !default;
@@ -42,3 +41,4 @@ $mq-desktop				: 1382px !default;
 		@content;
 	}
 }
+

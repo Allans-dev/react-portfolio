@@ -5,6 +5,9 @@
   @include tablet-portrait-and-below {
     font-size: 16px;
    }
+   @include mobile-landscape-and-below {
+    font-size: 12px;
+   }
 }
 
 .table-container {
@@ -15,9 +18,13 @@
   justify-content: center;
   vertical-align: middle;
 
-  ul li{
-    text-align: center;
-  }
+  ul {
+    padding: 1em;
+    li{
+      text-align: center;
+    }
+  } 
+  
 
  @include tablet-portrait-and-below {
   grid-template-columns: 1fr;

@@ -6,7 +6,7 @@ import Main from './components/Main';
 
 import params from './particle-params';
 
-import './App.scss';
+import './style/App.scss';
 
 const App = () => (
   <div className="App">

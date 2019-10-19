@@ -1,11 +1,12 @@
-@import './style/common-styles';
+@import 'common';
+
 .App {
   text-align: center;
   line-height: 1.3em;
   color: rgb(212, 212, 212);
 }
 
-section{
+article{
   position: relative;
 }
 

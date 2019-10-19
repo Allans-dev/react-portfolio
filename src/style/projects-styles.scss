@@ -1,4 +1,4 @@
-@import 'common-styles';
+@import 'common';
 
 .card-container{
   height: 100%;
@@ -46,6 +46,7 @@
     @media only screen and (max-width : 450px) {
       position: relative;
       padding: 0 3em;
+      margin-top: 0;
       top: -3em;
     }
   }
@@ -59,8 +60,8 @@ iframe {
     width: 40em;
   }
   @media only screen and (max-width : 450px) {
-    height: 20em;
-    width: 20em;
+    height: 25em;
+    width: 25em;
     transform:scale(0.6);
     -webkit-transform:scale(0.6);
     -moz-transform:scale(0.6);
