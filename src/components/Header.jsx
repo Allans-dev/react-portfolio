@@ -3,67 +3,88 @@ import { Link } from 'react-router-dom';
 
 import '../style/header-styles.scss';
 
+  function hideOnClickOutside(element) {
+    const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length );
+    const outsideClickListener = event => {
+        if (!element.contains(event.target) && isVisible(element)) {
+          document.getElementById("mobile-menu").classList.remove("active");
+          document.getElementById('menu-container').classList.remove('change');
+          removeClickListener()
+        }
+    }
+
+    const removeClickListener = () => {
+        document.removeEventListener('click', outsideClickListener)
+    }
+
+    document.addEventListener('click', outsideClickListener)
+  }
+
 class Header extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
-    this.state = {
-      showMenu: false,
-    }
     this.toggleMenu = this.toggleMenu.bind(this);
+    // this.hideOnClickOutside = this.hideOnClickOutside.bind(this);
   }
-  
 
-  LinkEnvCheck() {
-  if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-        return "/";
-      } else {
-        return "/react-portfolio/";
-      }
-}
+  state = { showMenu: false };
 
-  // showMenu(){
-  //   const showMenu = this.state;
-  //   console.log(showMenu);
-  //   return showMenu ? "menu-container" : "menu-container change";
-    
-  // }
-
-  toggleMenu(event){
-    const showMenu = this.state;
-    event.preventDefault();
-    if(showMenu === false){
-      console.log(showMenu);
-      document.getElementById("menu-container").classList.toggle("active");
-      this.setState({ showMenu: true });
+  linkEnvCheck() {
+    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+      return '/';
     }
-    else if (showMenu) {
-      console.log("wrong state");
-      document.getElementById("menu-container").classList.toggle("active");
+    return '/react-portfolio/';
+  }
+
+  toggleMenu(event) {
+    event.preventDefault();
+
+    const showMenu = this.state;
+
+    const mobile = document.getElementById('menu-container');
+    hideOnClickOutside(mobile);
+
+    if (showMenu === false) {
+      document.getElementById('menu-container').classList.toggle('change');
+      document.getElementById("mobile-menu").classList.toggle("active");
+      this.setState({ showMenu: true });
+    } else if (showMenu) {
+      document.getElementById('menu-container').classList.toggle('change');
+      document.getElementById("mobile-menu").classList.toggle("active");
       this.setState({ showMenu: false });
     }
+
+    
   }
 
-  render(){
+  render() {
     return (
       <header>
         <nav className="header-home-btn">
-            <Link to={this.LinkEnvCheck()} className="header-btn">home</Link>
+          <Link to={this.linkEnvCheck()} className="header-btn">home</Link>
         </nav>
         <nav className="nav-btns">
-          <Link to={this.LinkEnvCheck() + "experience"} className="header-btn">experience</Link>
-          <Link to={this.LinkEnvCheck() + "projects"} className="header-btn">projects</Link>
-          <Link to={this.LinkEnvCheck() + "social"} className="header-btn">social</Link>
+          <Link to={`${this.linkEnvCheck()}experience`} className="header-btn">experience</Link>
+          <Link to={`${this.linkEnvCheck()}projects`} className="header-btn">projects</Link>
+          <Link to={`${this.linkEnvCheck()}social`} className="header-btn">social</Link>
         </nav>
         <div id="menu-container" onClick={this.toggleMenu}>
-          <div className="bar1"></div>
-          <div className="bar2"></div>
-          <div className="bar3"></div>
-        </div> 
+          <div className="bar1" />
+          <div className="bar2" />
+          <div className="bar3" />
+        </div>
+        <nav id="mobile-menu">
+          <ul>
+            <li><Link to={`${this.linkEnvCheck()}experience`} className="mobile-header-btn">experience</Link></li>
+            <li><Link to={`${this.linkEnvCheck()}projects`} className="mobile-header-btn">projects</Link></li>
+            <li><Link to={`${this.linkEnvCheck()}social`} className="mobile-header-btn">social</Link></li>
+          </ul>
+        </nav>
       </header>
     );
   }
-};
-  
+}
+
 
 export default Header;

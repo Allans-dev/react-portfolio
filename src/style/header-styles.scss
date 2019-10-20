@@ -23,7 +23,7 @@ header{
   text-decoration: none;
   padding: 1em 10%;
 }
-.header-btn:hover, .header-btn:active{
+.header-btn:hover{
   background-color: $blue;
   cursor: pointer;
 }
@@ -63,7 +63,7 @@ header{
     transition: 0.4s;
   }
 
-  &.active{
+  &.change{
     .bar1 {
       -webkit-transform: rotate(-45deg) translate(-9px, 6px);
       transform: rotate(-45deg) translate(-9px, 6px);
@@ -77,6 +77,36 @@ header{
     }
   }
 }
+
+#mobile-menu{ 
+  max-height: 0;
+  overflow-x: hidden;
+  position: absolute;
+  background-color: $mediumBlue;
+  right: 0;
+  top: 3em;
+  transition: 1s;
+
+  ul{
+    padding-left: 0;
+    margin: 0;
+  }
+
+  &.active{
+    max-height: 10em;
+  }
+
+  .mobile-header-btn{
+    text-decoration: none;
+    color: inherit;
+    padding: 0 2em;
+    line-height: 2em;
+    :hover, :active{
+      background-color: $blue;
+    } 
+  }
+}
+
 
 
 
