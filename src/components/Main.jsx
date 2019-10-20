@@ -8,19 +8,23 @@ import Social from '../containers/Social';
 
 function envCheck() {
   if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-        return "/";
-      } else {
-        return "/react-portfolio/";
-      }
+    return '/';
+  }
+  return '/react-portfolio/';
 }
+
+// if (routesEqual && forceRefresh) {
+//   router.push({ pathname: '/empty' });
+//   router.replace({ pathname: '/route-to-refresh' });
+// }
 
 const Main = () => (
   <main>
     <Switch>
       <Route exact path={envCheck()} component={Home} />
-      <Route path={envCheck() + "experience"} component={Experience} />
-      <Route path={envCheck() + "projects"} component={Projects} />
-      <Route path={envCheck() + "social"} component={Social} />
+      <Route path={`${envCheck()}experience`} component={Experience} />
+      <Route path={`${envCheck()}projects`} component={Projects} />
+      <Route path={`${envCheck()}social`} component={Social} />
     </Switch>
   </main>
 );

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import Particles from 'react-particles-js';
 // import { Button } from '@material-ui/core';
 import Modal from './Modal';
 import '../style/experience-styles.scss';
 
-import Particles from 'react-particles-js';
+
 import params from '../particle-params';
 
 class Experience extends Component {
@@ -24,13 +25,13 @@ class Experience extends Component {
     const { show } = this.state;
     return (
       <section className="experience">
-      <Particles className="particles" params={params} />
+        <Particles className="particles" params={params} />
         <div className="table-container">
           <div className="cell exp">
             <h2>Experience</h2>
             <ul>
               <li>
-                <p>Junior Full Stack Web Developer, BirdBrain 2018 (3 months)</p>
+                <p>Junior Full Stack Web Developer, BirdBrain 2018 (4 months)</p>
                 <p>Developing in HTML, CSS,JavaScript, ReactJS, PHP and WordPress</p>
               </li>
             </ul>
@@ -40,9 +41,11 @@ class Experience extends Component {
             <ul>
               <li>Certificate IV Programming, TAFE 2019</li>
               {// eslint-disable-next-line react/no-unescaped-entities
-                <li>Free Code Camp's Front End Certificate 2017</li>}
+                <li>Free Code Camp's Front End Certificate 2017</li>
+}
               {// eslint-disable-next-line react/no-unescaped-entities
-                <li>Free Code Camp's Algorthms and Data Structures Certificate</li>}
+                <li>Free Code Camp's Algorthms and Data Structures Certificate</li>
+}
             </ul>
           </div>
           <div className="cell extra">
