@@ -18,8 +18,18 @@
   justify-content: center;
   vertical-align: middle;
 
+  h2{
+    @include mobile-landscape-and-below {
+      margin-bottom: 0;
+      margin-top: 2em;
+     }
+  }
+
   ul {
-    padding: 1em;
+    padding-left: 0;
+    @include mobile-landscape-and-below {
+      padding: 0 1em;
+     }
     li{
       text-align: center;
     }

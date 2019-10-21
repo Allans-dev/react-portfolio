@@ -30,10 +30,8 @@ class Experience extends Component {
           <div className="cell exp">
             <h2>Experience</h2>
             <ul>
-              <li>
-                <p>Junior Full Stack Web Developer, BirdBrain 2018 (4 months)</p>
-                <p>Developing in HTML, CSS,JavaScript, ReactJS, PHP and WordPress</p>
-              </li>
+              <li>Junior Full Stack Web Developer, BirdBrain 2018 (4 months)</li>
+              <li>Developing in HTML, CSS,JavaScript, ReactJS, PHP and WordPress</li>
             </ul>
           </div>
           <div className="cell edu">
