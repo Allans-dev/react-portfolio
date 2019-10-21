@@ -30,12 +30,12 @@ class Header extends Component {
 
   state = { showMenu: false };
 
-  linkEnvCheck() {
-    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-      return '/';
-    }
-    return '/react-portfolio/';
-  }
+  // linkEnvCheck() {
+  //   if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+  //     return '/';
+  //   }
+  //   return '/react-portfolio/';
+  // }
 
   toggleMenu(event) {
     event.preventDefault();
@@ -45,7 +45,7 @@ class Header extends Component {
     const mobile = document.getElementById('menu-container');
     hideOnClickOutside(mobile);
 
-    if (showMenu === false) {
+    if (!showMenu) {
       document.getElementById('menu-container').classList.toggle('change');
       document.getElementById("mobile-menu").classList.toggle("active");
       this.setState({ showMenu: true });
@@ -62,12 +62,12 @@ class Header extends Component {
     return (
       <header>
         <nav className="header-home-btn">
-          <Link to={this.linkEnvCheck()} className="header-btn">home</Link>
+          <Link to="/" className="header-btn">home</Link>
         </nav>
         <nav className="nav-btns">
-          <Link to={`${this.linkEnvCheck()}experience`} className="header-btn">experience</Link>
-          <Link to={`${this.linkEnvCheck()}projects`} className="header-btn">projects</Link>
-          <Link to={`${this.linkEnvCheck()}social`} className="header-btn">social</Link>
+          <Link to={`/experience`} className="header-btn">experience</Link>
+          <Link to={`/projects`} className="header-btn">projects</Link>
+          <Link to={`/social`} className="header-btn">social</Link>
         </nav>
         <div id="menu-container" onClick={this.toggleMenu}>
           <div className="bar1" />
@@ -76,9 +76,9 @@ class Header extends Component {
         </div>
         <nav id="mobile-menu">
           <ul>
-            <li><Link to={`${this.linkEnvCheck()}experience`} className="mobile-header-btn">experience</Link></li>
-            <li><Link to={`${this.linkEnvCheck()}projects`} className="mobile-header-btn">projects</Link></li>
-            <li><Link to={`${this.linkEnvCheck()}social`} className="mobile-header-btn">social</Link></li>
+            <li><Link to={`/experience`} className="mobile-header-btn">experience</Link></li>
+            <li><Link to={`/projects`} className="mobile-header-btn">projects</Link></li>
+            <li><Link to={`/social`} className="mobile-header-btn">social</Link></li>
           </ul>
         </nav>
       </header>
