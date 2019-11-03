@@ -9,13 +9,14 @@
 
 .modal-main {
   position:fixed;
-  background: white;
+  background: rgb(155, 202, 198);
   width: 80%;
   height: auto;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
   z-index: 9999;
+  padding: 1em;
 }
 
 .display-block {
@@ -25,3 +26,171 @@
 .display-none {
   display: none;
 }
+
+// Animation
+
+.skill-animation{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.circle-row{
+  text-align: center;
+  width: 100%;
+}
+
+.circle {
+  position: relative;
+  display: inline-block;
+  height: 20em;
+  width: 20em;
+  border-radius: 50%;
+  line-height: 20em;
+  opacity: 0.8;
+  color: white;
+  font-weight: 400;
+}
+
+.title-circle {
+  z-index: 100;
+  height: 12em;
+  width: 12em;
+  line-height: 12em;
+  vertical-align: 2.5em;
+  margin-top: -2.5em;
+  background-color: #191919;
+}
+
+.browser-circle { 
+  margin: 0 -2em -2em 0; 
+  background-color: #B9697B;
+}
+.dev-circle { 
+  margin: 0 0 -2.5em -2em; 
+  background-color: #581300;
+}
+.fe-circle {
+  margin: -4em; 
+  background-color: #4779A7;
+} 
+
+.db-circle { 
+  margin: -4em;
+  background-color: #F17425;
+}
+.be-circle { 
+  margin-top: -4em; 
+  background-color: #022341;
+}
+
+/*Text Layer*/
+
+.skills-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  // opacity: 1;
+  transition: opacity 0.35s;
+  font-weight: 300;
+/*    border: 1px solid blue;*/
+}
+
+.skill-item{
+  position: absolute;
+  font-size: 100%;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  color: #dbdbdb;
+}
+
+/*browser skill item positioning*/
+
+.skill-html5 { 
+  left: -1.6em;
+  top: -8em; 
+}
+.skill-css3 {
+  bottom: -1.6em;
+  left: -6.4em;
+}
+.skill-chrome-ext { top: -4.2em; }
+.skill-javascript {
+  top: -7em;
+  left: 2em;
+}
+.skill-cpanel {
+  left: -8em;
+}
+
+/*developer tools skill item positioning*/
+
+.skill-webpack {
+  top: -4.8em;
+  left: -3.2em;
+}
+.skill-github {
+  top: -7.1em;
+  left: 2em;
+}
+.skill-cli {
+  bottom: -4em;
+  left: -4em;
+}
+.skill-mocha {
+  top: -3.2em;
+  left: 4.8em;
+}
+.skill-mamp {
+  top: -6.8em;
+  left: -2em;
+}
+
+/*frontend skill item positioning*/
+
+.skill-reactjs {
+  top: -4.8em;
+  left: -4em;
+}
+.skill-redux {
+  top: -3.2em;
+  left: 4em;
+}
+.skill-react-router {
+  bottom: -3em;
+  left: -4em;
+}
+.skill-jquery {
+  bottom: -6em;
+}
+.skill-wordpress {
+  transform: rotate(-45deg);
+  top: -6em;
+  left: -6.4em;
+}
+
+/*database skill item positioning*/
+
+.skill-mongodb {
+  bottom: -4.8em;
+  left: 2em;
+}
+.skill-mysql {
+  top: -4em;
+  left: 4em;
+}
+.skill-expressjs {
+  transform: rotate(45deg);
+  top: -6em;
+  left: 6.4em;
+}
+
+/*backend skill item positioning*/
+
+.skill-nodejs { bottom: -5em; }
+.skill-php { top: -5em; }

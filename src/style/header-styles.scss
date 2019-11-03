@@ -93,14 +93,14 @@ header{
   }
 
   &.active{
-    max-height: 10em;
+    max-height: 15em;
   }
 
   .mobile-header-btn{
     text-decoration: none;
     color: inherit;
-    padding: 0 2em;
-    line-height: 2em;
+    padding: 2em;
+    line-height: 5em;
     :hover, :active{
       background-color: $blue;
     } 

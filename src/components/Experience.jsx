@@ -11,6 +11,8 @@ class Experience extends Component {
   constructor(props) {
     super(props);
     this.state = { show: false };
+    this.showModal = this.showModal.bind(this);
+    this.hideModal = this.hideModal.bind(this);
   }
 
   showModal() {
@@ -62,12 +64,12 @@ class Experience extends Component {
               <li>B. Property Economics, University of Technology Sydney 2016</li>
               <li>International Business, Berlin University of Social Sciences 2015</li>
             </ul>
-            {/* <Button type="button" onClick={this.showModal}>
-              Open
-            </Button> */}
           </div>
         </div>
-        <Modal show={show} handleClose={this.hideModal} />
+        {/* <button type="button" onClick={this.showModal}>
+              Skills
+        </button>
+        <Modal show={show} handleClose={this.hideModal} /> */}
       </section>
     );
   }

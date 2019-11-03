@@ -1,6 +1,10 @@
+@import'mixins';
 .home{
   position: relative;
   min-height: 100vh;
+  @include mobile-landscape-and-below {
+    font-size: 12px;
+   }
 }
 .title{
   position: absolute;
@@ -8,4 +12,47 @@
   top: 50%;
   transform: translate(-50%, -50%);
   color: rgb(212, 212, 212);
+}
+
+.icon-container{
+  padding-top: 30em;
+  @include mobile-landscape-and-below {
+    padding-top: 40em;
+
+   }
+  div{
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 2em;
+    background-color: grey;
+    border-radius: 10px;
+    
+    a{
+      padding: 0.2em 0.5em;
+      font-size: 3em;
+      color: inherit;
+
+      @include mobile-landscape-and-below {
+        font-size: 2em;
+       }
+      .fa-linkedin:hover{
+        color: #0077b5;
+        transition: color 0.8s;
+      }
+      .fa-github:hover{
+        color: #6e5494;
+        transition: color 0.8s;
+      }
+      .fa-free-code-camp:hover{
+        color: #006400;
+        transition: color 0.8s;
+      }
+      .fa-instagram:hover{
+        color: #c13584;
+        transition: color 0.8s;
+      }
+    }
+  }
+  
 }

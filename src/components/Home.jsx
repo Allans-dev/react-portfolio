@@ -3,9 +3,17 @@ import React from 'react';
 import '../style/home-styles.scss';
 
 const Home = () => (
-  <section className="home">
+  <article className="home">
     <h1 className="title">Welcome to code.allan</h1>
-  </section>
+    <section className="icon-container">
+      <div>
+        <a href="https://www.linkedin.com/in/allan-cheung-web/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin" /></a>
+        <a href="https://github.com/Allans-dev" target="_blank" rel="noopener noreferrer"><i className="fa fa-github" /></a>
+        <a href="https://www.freecodecamp.org/allans-dev" target="_blank" rel="noopener noreferrer"><i className="fa fa-free-code-camp" /></a>
+        <a href="https://www.instagram.com/al_che9/" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram" /></a>
+      </div>
+    </section>
+  </article>
 );
 
 export default Home;
