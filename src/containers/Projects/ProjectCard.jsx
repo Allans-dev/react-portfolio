@@ -12,7 +12,6 @@ const ProjectCard = (props) => {
     github,
     site,
   } = props;
-  console.log(props);
 
   return (
     <article className="project-card">

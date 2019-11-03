@@ -18,7 +18,7 @@
   padding-top: 30em;
   @include mobile-landscape-and-below {
     padding-top: 40em;
-
+    overflow-y: hidden;
    }
   div{
     display: inline-flex;

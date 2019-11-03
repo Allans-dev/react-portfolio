@@ -39,7 +39,13 @@ class Experience extends Component {
           <div className="cell edu">
             <h2>Programming</h2>
             <ul>
-              <li>Certificate IV Programming, TAFE 2019</li>
+              <li>
+              Certificate IV Programming, TAFE 2019:
+                <br />
+              C#(.NET CORE), HTML5, CSS3, JavaScript, Java(Android),
+                <br />
+              Microsoft SQL Server, Testing, XML and OOAD
+              </li>
               {// eslint-disable-next-line react/no-unescaped-entities
                 <li>Free Code Camp's Front End Certificate 2017</li>
 }

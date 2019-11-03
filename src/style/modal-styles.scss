@@ -9,7 +9,7 @@
 
 .modal-main {
   position:fixed;
-  background: rgb(155, 202, 198);
+  background: rgb(155, 181, 202);
   width: 80%;
   height: auto;
   top:50%;
@@ -36,6 +36,12 @@
   flex-wrap: wrap;
   margin: 0 auto;
   font-size: 12px;
+  // animation: skill-animation infinite 20s linear;
+}
+
+@keyframes skill-animation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .circle-row{
