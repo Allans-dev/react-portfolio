@@ -15,7 +15,7 @@ const projectData = {
     description:
       "Combination of recording stock trades, calculating tax, expenses and savings",
     website: "https://tradingbudget.web.app",
-    github: "https://github.com/awcsome/trading-budget",
+    github: "https://github.com/Allans-dev/trading-budget",
   },
 };
 
