@@ -10,7 +10,7 @@ const Home = () => (
         <a href="https://www.linkedin.com/in/allan-cheung-web/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin" /></a>
         <a href="https://github.com/Allans-dev" target="_blank" rel="noopener noreferrer"><i className="fa fa-github" /></a>
         <a href="https://www.freecodecamp.org/allans-dev" target="_blank" rel="noopener noreferrer"><i className="fa fa-free-code-camp" /></a>
-        <a href="https://www.instagram.com/al_che9/" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram" /></a>
+        <a href="https://www.instagram.com/_photosbyallan_/" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram" /></a>
       </div>
     </section>
   </article>
